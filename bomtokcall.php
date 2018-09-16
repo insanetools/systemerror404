@@ -20,11 +20,11 @@ function tokcall($no, $jum, $wait){
         flush();
     }
 }
-echo "Nomor (ex : 08xxxx) (cuma 3x/jam)\nInput : ";
+echo "Nomor Target (ex : 08xxxx):\n";
 $nomor = trim(fgets(STDIN));
-echo "1x Persubmit\nInput : ";
+echo "1x Persubmit:\n";
 $jumlah = trim(fgets(STDIN));
-echo "Jeda\nInput : ";
+echo "Delay:\n";
 $jeda = trim(fgets(STDIN));
 $execute = tokcall($nomor, $jumlah, $jeda);
 print $execute;
