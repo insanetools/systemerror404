@@ -21,11 +21,11 @@ function jdidbom($no, $jum, $wait){
     }
 }
 
-echo "Nomor Target (ex : 8xxxx)\nInput : ";
+echo "Nomor Target (ex : 8xxxx):\n";
 $nomor = trim(fgets(STDIN));
-echo "Jumlah Pesan\nInput : ";
+echo "Jumlah Pesan:\n";
 $jumlah = trim(fgets(STDIN));
-echo "Delay\nInput : ";
+echo "Delay:\n";
 $jeda = trim(fgets(STDIN));
 $execute = jdidbom($nomor, $jumlah, $jeda);
 print $execute;
